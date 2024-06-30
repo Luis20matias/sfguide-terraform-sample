@@ -18,3 +18,18 @@ $ export SNOWFLAKE_AUTHENTICATOR=JWT
 $ export SNOWFLAKE_PRIVATE_KEY=`cat ~/.ssh/snowflake_tf_snow_key.p8`
 $ export SNOWFLAKE_ACCOUNT="YOUR_ACCOUNT_LOCATOR"
 ```
+
+# To generate an terraform documentation
+
+Install "terraform-docs":
+
+``` bash
+sudo snap install terraform-docs
+```
+
+Generate documentation inside the folder terraform:
+
+
+``` bash
+terraform-docs markdown table . > terraform_documentation.md
+```
